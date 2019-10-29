@@ -1,0 +1,52 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    font-family: consolas;
+}
+
+#div-funcoes {
+    padding: 25px 20px;
+    float: left;
+}
+
+#div-funcoes > button {
+    background-color: #FFF;
+    color: #0066CC;
+    text-decoration: none;
+    border: 2px solid #0066CC;
+    padding: 5px 7px;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+#div-funcoes > button:hover {
+    color: #F00;
+    border-color: #F00;
+}
+
+#div-funcoes > button:focus {
+    color: #0066CC;
+    border-color: #0066CC;
+}
+
+#ul-logs {
+    float: left;
+    margin: 0px; 
+    padding: 20px 30px !important;
+}
+
+#ul-logs > li:first-child {
+    font-weight: bold;
+}
+
+@media print {
+    body > div {
+        display: none !important;
+    }
+}

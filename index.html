@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Gérison Sabino - @gerisonsabino" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title></title>
+
+        <link type="text/css" rel="stylesheet" href="css/layout.css" />
+    </head>
+    <body>
+        <div id="div-funcoes">
+            <button type='button' onclick="request();">Registrar log</button>
+            <button type='button' onclick="copiarTexto();">Copiar em formato Texto</button>
+            <button type='button' onclick="copiarJSON();">Copiar em formato JSON</button>
+            <button type='button' onclick="imprimirLogs();">Imprimir</button>
+            <br />
+            <button type='button' onclick="exportarTexto();">Exportar em formato Texto</button>
+            <button type='button' onclick="exportarJSON();">Exportar em formato JSON</button>
+        </div>
+
+        <ul id="ul-logs"></ul>
+
+        <script type="text/javascript" src="js/log.js"></script>
+        <script type="text/javascript" src="js/funcoes.js"></script>
+        <script type="text/javascript" src="js/bot.js"></script>
+    </body>
+</html>
