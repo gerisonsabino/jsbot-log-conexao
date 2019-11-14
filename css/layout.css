@@ -10,7 +10,13 @@ body {
     float: left;
 }
 
-#div-funcoes > button {
+#div-funcoes h2 {
+    font-family: Tahoma;
+    padding: 0px;
+    margin-top: 0px; 
+}
+
+#div-funcoes button {
     background-color: #FFF;
     color: #0066CC;
     text-decoration: none;
@@ -22,17 +28,51 @@ body {
     font-weight: bold;
     cursor: pointer;
     width: 100%;
+    height: 30px;
     text-align: left;
+    outline: none !important; 
 }
 
-#div-funcoes > button:hover {
+#div-funcoes button:hover {
     color: #F00;
     border-color: #F00;
 }
 
-#div-funcoes > button:focus {
+#div-funcoes button:focus {
     color: #0066CC;
     border-color: #0066CC;
+}
+
+#div-funcoes span {
+    padding-bottom: 20px;
+    display: block;
+}
+
+#div-funcoes span label {
+    font-size: 12px;
+}
+
+#div-funcoes span input[type='text'] {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    outline: none !important; 
+    margin: 5px 0px;
+}
+
+#div-funcoes span button {
+    width: 80px;
+    display: inline-block;
+    text-align: center;
 }
 
 #ul-logs {

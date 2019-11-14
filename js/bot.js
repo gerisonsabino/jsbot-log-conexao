@@ -1,8 +1,23 @@
+//Intervalo de execução a cada 30 segundos por padrão (param 30000 em milisegundos), pode ser alterado pelo usuário
+var interval = setInterval(request, 30000);
+
 window.onload = function () {
+    //Requisição de teste inicial
     request();
-    //Intervalo de execução a cada 30 segundos (param 30000 em milisegundos);
-    setInterval("request();", 30000);
 };
+
+function setSegundos() {
+    let segs = parseInt(document.getElementById("txt-segundos").value.replace(/\D/g, ""));
+
+    if (segs > 0) {
+        clearInterval(interval);
+        interval = setInterval(request, (segs * 1000));
+    }
+    else {
+        document.getElementById("txt-segundos").value = "30";
+        setSegundos();
+    }
+}
 
 function printLog(log) {
     return "#" + log.ID + "# - [" + log.Data + "] Conexão: " + (log.Online ? "Online" : "Off-Line");

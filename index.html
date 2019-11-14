@@ -12,13 +12,22 @@
     </head>
     <body>
         <div id="div-funcoes">
-            <button type='button' onclick="request();">Registrar log</button>
-            <button type='button' onclick="copiarTexto();">Copiar em formato Texto</button>
-            <button type='button' onclick="copiarJSON();">Copiar em formato JSON</button>
-            <button type='button' onclick="imprimirLogs();">Imprimir</button>
+            <h2>jsbot-log-conexao</h2>
+            <span>
+                <label>Registrar a cada (em segundos):</label>
+                <br />
+                <input type="text" value="30" id="txt-segundos" />
+                <button type="button" onclick="setSegundos();">Salvar</button>
+            </span>
+            <button type="button" onclick="request();">Registrar log</button>
             <br />
-            <button type='button' onclick="exportarTexto();">Exportar em formato Texto</button>
-            <button type='button' onclick="exportarJSON();">Exportar em formato JSON</button>
+            <button type="button" onclick="copiarTexto( );">Copiar em formato Texto</button>
+            <button type="button" onclick="copiarJSON();">Copiar em formato JSON</button>
+            <br />
+            <button type="button" onclick="imprimirLogs();">Imprimir</button>
+            <br />
+            <button type="button" onclick="exportarTexto();">Exportar em formato Texto</button>
+            <button type="button" onclick="exportarJSON();">Exportar em formato JSON</button>
         </div>
 
         <ul id="ul-logs"></ul>
