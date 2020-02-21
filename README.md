@@ -2,6 +2,7 @@
 Bot, em JavaScript, para registro de logs sobre o estado atual da conexão com a internet (online/off-line).
 
 **Utilidades:**
+- Definir intervalo (em segundos) de registro dos logs
 - Registrar log no momento atual
 - Copiar dados no formato Texto
 - Copiar dados no formato JSON
