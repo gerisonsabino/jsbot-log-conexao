@@ -6,6 +6,16 @@ window.onload = function () {
     request();
 };
 
+window.onbeforeunload = function (e) {
+    e = e || window.event;
+
+    if (e) {
+        e.returnValue = 'Deseja realmente sair?';
+    }
+
+    return 'Deseja realmente sair?';
+};
+
 function setSegundos() {
     let segs = parseInt(document.getElementById("txt-segundos").value.replace(/\D/g, ""));
 
